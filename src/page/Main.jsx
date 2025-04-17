@@ -3,6 +3,13 @@ import { Card, CardHeader, CardBody, Image } from "@heroui/react";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 
+// 페이지 폴더별로 다시 구성하고 MainPage폴더 안에 hooks 폴더를 만들어 리액트쿼리를 이용한 데이터를 따로 분리하기
+// 로그인 유저는 00님 환영합니다. 보여주기
+// 검색 기능
+// 검색했을 때 이미지가 없으면 기본 이미지로 보여주기
+// 검색했을 때 리스트가 없으면 책 목록이 없습니다 보여주기
+// 좋아요 기능 -> zustand에 책 좋아요 한거 저장하기
+
 const Main = () => {
   // api 호출
   const fetchBooks = async () => {
